@@ -11,7 +11,7 @@ const Header = ({ onLogout }) => (
       </button>
     )}
     <i className="fas fa-users fa-2x"></i>
-    <h1 className={styles.title}>together</h1>
+    <h2 className={styles.title}>together</h2>
   </header>
 );
 export default Header;

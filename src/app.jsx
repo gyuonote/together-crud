@@ -1,10 +1,10 @@
 import styles from "./app.module.css";
-import Board from "./components/board/board";
+import Signup from "./components/signup/signup";
 
 function App() {
   return (
     <div className={styles.app}>
-      <Board />
+      <Signup />
     </div>
   );
 }

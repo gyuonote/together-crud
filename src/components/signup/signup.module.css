@@ -1,17 +1,13 @@
 @value makerGreen, makerLightPink,makerBlack, makerWhite from '../../common/colors.css';
 
 .signup {
-  width: 23em;
-  height: 30em;
+  width: 27em;
+  height: 27em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: makerWhite;
-  border-radius: 22px;
-}
-.li_box {
-  justify-content: center;
 }
 
 .list {
@@ -33,6 +29,10 @@ input {
   outline: 0;
   border-radius: 20px;
   box-shadow: 5px 5px 15px -5px;
+}
+
+.item {
+  margin-bottom: 0.5em;
 }
 
 .button:hover {
@@ -66,10 +66,9 @@ input {
 }
 
 .check_input {
-  width: 70%;
+  width: 69%;
   height: 2.5em;
   font-size: 1.1rem;
-  border-radius: 1.2rem;
   background-color: transparent;
   cursor: pointer;
   border: 0.2rem solid makerBlack;
@@ -84,12 +83,4 @@ input {
 
 .check_button:hover {
   background: makerLightPink;
-}
-
-ul > li {
-  margin-bottom: 0.5em;
-}
-div {
-  text-align: left;
-  font-size: 1.2rem;
 }

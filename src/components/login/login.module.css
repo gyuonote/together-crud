@@ -2,13 +2,12 @@
 
 .login {
   width: 30em;
-  height: 26em;
+  height: 23em;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: makerWhite;
-  border-radius: 22px;
 }
 
 .list {
@@ -31,7 +30,7 @@
   box-shadow: 5px 5px 15px -5px;
 }
 .item {
-  margin-bottom: 0.5em;
+  margin-top: 0.5em;
 }
 
 .button_item {

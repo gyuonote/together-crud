@@ -9,27 +9,25 @@ const Signup = () => {
       <Header />
       <section>
         <ul className={styles.list}>
-          <li className={styles.li_box}>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;아이디</div>
+          <li className={styles.item}>
             <input
               className={styles.check_input}
               type="text"
               placeholder="아이디를 입력하세요."
             />
-            &nbsp;
             <button className={styles.check_button}>중복확인</button>
           </li>
-          <li>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;비밀번호</div>
+          <li className={styles.item}>
             <input type="password" placeholder="비밀번호를 입력하세요." />
           </li>
-          <li>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;이메일</div>
+          <li className={styles.item}>
             <input type="text" placeholder="이메일을 입력하세요." />
           </li>
-          <li>
-            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;닉네임</div>
+          <li className={styles.item}>
             <input type="text" placeholder="닉네임을 입력하세요." />
+          </li>
+          <li className={styles.item}>
+            <input type="text" placeholder="전화번호를 입력하세요." />
           </li>
           <li>
             <button className={styles.signup_button} value="submit">
