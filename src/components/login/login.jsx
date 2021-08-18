@@ -11,13 +11,19 @@ const Login = (props) => {
       <section>
         <ul className={styles.list}>
           <li className={styles.item}>
-            <input className={styles.input} type="text" placeholder="아이디" />
+            <div className={styles.title}>아이디</div>
+            <input
+              className={styles.input}
+              type="text"
+              placeholder="아이디를 입력하세요"
+            />
           </li>
           <li className={styles.item}>
+            <div className={styles.title}>비밀번호</div>
             <input
               className={styles.input}
               type="password"
-              placeholder="비밀번호"
+              placeholder="비밀번호를 입력하세요"
             />
           </li>
           <li className={styles.item}>

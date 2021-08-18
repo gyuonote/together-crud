@@ -1,8 +1,8 @@
 @value makerGreen, makerLightPink,makerBlack, makerWhite from '../../common/colors.css';
 
 .login {
-  width: 30em;
-  height: 23em;
+  width: 27em;
+  height: 29em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -17,6 +17,15 @@
   list-style: none;
   padding: 0.5rem;
 }
+
+.title {
+  text-indent: 1.5em;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
 .input {
   width: 90%;
   height: 2.5em;
@@ -46,6 +55,8 @@
   border: 0.2rem solid makerBlack;
   outline: 0;
   box-shadow: 5px 5px 15px -5px;
+  margin: 0.5em;
+  font-weight: bold;
 }
 
 .id_button {
@@ -59,10 +70,11 @@
   outline: 0;
   margin-right: 0.5em;
   box-shadow: 5px 5px 15px -5px;
+  font-weight: bold;
 }
 
 .pw_button {
-  width: 29%;
+  width: 33%;
   height: 2.5em;
   font-size: 1.2rem;
   border-radius: 1.2rem;
@@ -72,6 +84,7 @@
   outline: 0;
   margin-right: 0.5em;
   box-shadow: 5px 5px 15px -5px;
+  font-weight: bold;
 }
 
 .signup_button {
@@ -84,6 +97,7 @@
   border: 0.2rem solid makerBlack;
   outline: 0;
   box-shadow: 5px 5px 15px -5px;
+  font-weight: bold;
 }
 
 .id_button:hover {

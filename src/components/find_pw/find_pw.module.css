@@ -1,8 +1,8 @@
 @value makerGreen, makerLightPink,makerBlack, makerWhite from '../../common/colors.css';
 
-.signup {
+.find_id {
   width: 27em;
-  height: 40em;
+  height: 20em;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -25,29 +25,7 @@
   list-style: none;
   padding: 0.5rem;
 }
-
-input {
-  width: 90%;
-  height: 2.5em;
-  font-size: 1.1rem;
-  border-radius: 1.2rem;
-  background-color: transparent;
-  cursor: pointer;
-  border: 0.2rem solid makerBlack;
-  outline: 0;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px -5px;
-}
-
-.item {
-  margin-bottom: 0.5em;
-}
-
-.button:hover {
-  background: makerLightPink;
-}
-
-.signup_button {
+.input {
   width: 90%;
   height: 2.5em;
   font-size: 1.2rem;
@@ -58,38 +36,25 @@ input {
   outline: 0;
   border-radius: 20px;
   box-shadow: 5px 5px 15px -5px;
-  font-weight: bold;
+}
+.item {
+  margin-top: 0.5em;
 }
 
-.check_button {
-  width: 20%;
+.id_button {
+  width: 90%;
   height: 2.5em;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 1.2rem;
   background-color: transparent;
   cursor: pointer;
   border: 0.2rem solid makerBlack;
   outline: 0;
-  border-radius: 20px;
+  margin-top: 0.5em;
   box-shadow: 5px 5px 15px -5px;
+  font-weight: bold;
 }
 
-.check_input {
-  width: 69%;
-  height: 2.5em;
-  font-size: 1.1rem;
-  background-color: transparent;
-  cursor: pointer;
-  border: 0.2rem solid makerBlack;
-  outline: 0;
-  border-radius: 20px;
-  box-shadow: 5px 5px 15px -5px;
-}
-
-.signup_button:hover {
-  background: makerLightPink;
-}
-
-.check_button:hover {
-  background: makerLightPink;
+.id_button:hover {
+  background-color: makerLightPink;
 }
