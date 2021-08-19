@@ -3,8 +3,16 @@ import Footer from "../footer/footer";
 import Header from "../header/header";
 import styles from "./board.module.css";
 import Table from "react-bootstrap/Table";
+import { useHistory } from "react-router-dom";
 
 const Board = () => {
+  //화면에서 다른 라우터로 갈떄는 히스토리 라는 것을이용
+  const history = useHistory();
+  const goToLogin = () => {
+    history.push({
+      pathname: "/login",
+    });
+  };
   return (
     <section className={styles.board}>
       <Header />

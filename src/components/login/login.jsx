@@ -4,6 +4,7 @@ import Header from "../header/header";
 import styles from "./login.module.css";
 
 const Login = (props) => {
+  //{/*화면에서 다른 라우터로 갈떄는 히스토리 라는 것을이용*/}
   const onLogin = (event) => {};
   return (
     <section className={styles.login}>
