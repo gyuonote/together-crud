@@ -1,9 +1,18 @@
-const maria = require("mysql");
-const conn = maria.createConnection({
+const mysql = require("mysql");
+const connection = mysql.createConnection({
   host: "localhost",
-  port: 3306,
   user: "root",
   password: "together123",
   database: "together",
 });
-module.exports = conn;
+
+connection.connect();
+
+connection.query("select * from board", function (error, results, fields) {
+  if (error) {
+    console.log(error);
+  }
+  console.log(results);
+});
+
+connection.end();

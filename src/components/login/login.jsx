@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Footer from "../footer/footer";
 import Header from "../header/header";
 import styles from "./login.module.css";
@@ -16,7 +17,7 @@ const Login = (props) => {
             <input
               className={styles.input}
               type="text"
-              placeholder="아이디를 입력하세요"
+              placeholder="Enter id"
             />
           </li>
           <li className={styles.item}>
@@ -24,7 +25,7 @@ const Login = (props) => {
             <input
               className={styles.input}
               type="password"
-              placeholder="비밀번호를 입력하세요"
+              placeholder="Enter password"
             />
           </li>
           <li className={styles.item}>
@@ -33,15 +34,21 @@ const Login = (props) => {
             </button>
           </li>
           <li className={styles.item}>
-            <button className={styles.id_button} onClick={onLogin}>
-              아이디찾기
-            </button>
-            <button className={styles.pw_button} onClick={onLogin}>
-              비밀번호찾기
-            </button>
-            <button className={styles.signup_button} onClick={onLogin}>
-              회원가입
-            </button>
+            <Link to="/find_id">
+              <button className={styles.id_button} onClick={onLogin}>
+                아이디찾기
+              </button>
+            </Link>
+            <Link to="/find_pw">
+              <button className={styles.pw_button} onClick={onLogin}>
+                비밀번호찾기
+              </button>
+            </Link>
+            <Link to="/signup">
+              <button className={styles.signup_button} onClick={onLogin}>
+                회원가입
+              </button>
+            </Link>
           </li>
         </ul>
       </section>

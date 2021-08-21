@@ -10,23 +10,19 @@ const FindPw = (props) => (
       <ul className={styles.list}>
         <li className={styles.item}>
           <div className={styles.title}>아이디</div>
-          <input
-            className={styles.input}
-            type="text"
-            placeholder="아이디를 입력하세요."
-          />
+          <input className={styles.input} type="text" placeholder="Enter id" />
         </li>
         <li className={styles.item}>
-          <div className={styles.title}>비밀번호</div>
+          <div className={styles.title}>이메일</div>
           <input
             className={styles.input}
             type="tel"
-            placeholder="비밀번호를 입력하세요."
+            placeholder="Enter your e-mail adress"
           />
         </li>
 
         <li className={styles.item}>
-          <button className={styles.id_button}>비밀번호 변경</button>
+          <button className={styles.id_button}>비밀번호 찾기</button>
         </li>
       </ul>
     </section>

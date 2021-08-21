@@ -14,25 +14,25 @@ const Signup = () => {
             <input
               className={styles.check_input}
               type="text"
-              placeholder="아이디를 입력하세요."
+              placeholder="Enter id"
             />
             <button className={styles.check_button}>중복확인</button>
           </li>
           <li className={styles.item}>
             <div className={styles.title}>비밀번호</div>
-            <input type="password" placeholder="비밀번호를 입력하세요." />
+            <input type="password" placeholder="Enter password" />
           </li>
           <li className={styles.item}>
-            <div className={styles.title}>이메일</div>
-            <input type="text" placeholder="이메일을 입력하세요." />
-          </li>
-          <li className={styles.item}>
-            <div className={styles.title}>닉네임</div>
-            <input type="text" placeholder="닉네임을 입력하세요." />
+            <div className={styles.title}>이름</div>
+            <input type="password" placeholder="Enter your name" />
           </li>
           <li className={styles.item}>
             <div className={styles.title}>전화번호</div>
-            <input type="text" placeholder="전화번호를 입력하세요." />
+            <input type="text" placeholder="Enter your phone number" />
+          </li>
+          <li className={styles.item}>
+            <div className={styles.title}>이메일</div>
+            <input type="text" placeholder="Enter your e-mail adress" />
           </li>
           <li>
             <button className={styles.signup_button} value="submit">

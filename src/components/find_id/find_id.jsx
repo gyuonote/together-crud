@@ -9,11 +9,11 @@ const FindId = (props) => (
     <section>
       <ul className={styles.list}>
         <li className={styles.item}>
-          <div className={styles.title}>이메일</div>
+          <div className={styles.title}>이름</div>
           <input
             className={styles.input}
             type="text"
-            placeholder="이메일을 입력하세요."
+            placeholder="Enter your name"
           />
         </li>
         <li className={styles.item}>
@@ -21,7 +21,7 @@ const FindId = (props) => (
           <input
             className={styles.input}
             type="tel"
-            placeholder="전화번호를 입력하세요."
+            placeholder="Enter your phone number"
           />
         </li>
 
