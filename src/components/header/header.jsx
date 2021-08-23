@@ -2,14 +2,14 @@ import React from "react";
 import styles from "./header.module.css";
 import { Link } from "react-router-dom";
 
-const Header = ({ onLogout, onLogin, onsignup }) => (
+const Header = ({ onLogout }) => (
   <header className={styles.header}>
     <Link to="/login">
-      {true && <button className={styles.login}>로그인</button>}
+      <button className={styles.login}>로그인</button>
     </Link>
 
     <Link to="/signup">
-      {true && <button className={styles.writing}>회원가입</button>}
+      <button className={styles.writing}>회원가입</button>
     </Link>
 
     {onLogout && (
