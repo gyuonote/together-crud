@@ -1,11 +1,13 @@
 {
   "folders": [
-	{
-		"path": "."
-	},
-	{
-		"path": "..\\together-backend"
-	}
-],
+    {
+      "name": "together-frontend-test",
+      "path": "..\\together-frontend-test"
+    },
+    {
+      "name": "together-backend",
+      "path": "..\\together-backend"
+    }
+  ],
   "settings": {}
 }

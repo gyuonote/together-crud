@@ -1,30 +1,22 @@
-require('dotenv').config();
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.module.css';
+import './index.css';
 import App from './app';
 import '@fortawesome/fontawesome-free/js/all.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
-const mongoose = require('mongoose');
+import { BrowserRouter } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
+import { composeWithDevTools } from 'redux-devtools-extension';
+import rootReducer from './modules';
 
-// 비구조화 할당을  통해 process.env 내부 값에 대한 래퍼런스 만들기
-/* const { PORT, MONGO_URI } = process.env;
-
-mongoose
-  .connect(MONGO_URI, { useNewUrlParser: true, useFindAndModify: false })
-  .then(() => {
-    console.log("Connected to MongoDB");
-  })
-  .catch((e) => {
-    console.error(e);
-  }); */
-app.listen(4000, () => {
-  console.log('Listening to port 4000');
-});
+const store = createStore(rootReducer, composeWithDevTools());
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root'),
 );
