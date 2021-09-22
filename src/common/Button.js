@@ -1,5 +1,5 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import palette from '../lib/styles/palette';
 
 const StyledButton = styled.button`
@@ -16,6 +16,23 @@ const StyledButton = styled.button`
   &:hover {
     background: ${palette.gray[6]};
   }
+  ${(props) =>
+    props.fullWidth &&
+    css`
+      padding-top: 0.75rem;
+      padding-bottom: 0.75rem;
+      width: 100%;
+      font-size: 1.125rem;
+    `}
+
+  ${(props) =>
+    props.cyan &&
+    css`
+      background: ${palette.cyan[5]};
+      $:hover {
+        background: ${palette.cyan[4]};
+      }
+    `}
 `;
 
 // styled-components로 만든 컴포넌트를 바로 내보내면 자동 import가 제대로 작동되지 않습니다./gyuo/2021-09-21
