@@ -46,7 +46,7 @@ export const register = createAction(REGISTER, ({ username, password }) => ({
   password,
 }));
 
-export const login = createAction(REGISTER, ({ username, password }) => ({
+export const login = createAction(LOGIN, ({ username, password }) => ({
   username,
   password,
 }));
@@ -97,10 +97,9 @@ const auth = handleActions(
       auth,
     }),
     // 회원가입 실패
-    [REGISTER_FAILURE]: (state, { payload: auth }) => ({
+    [REGISTER_FAILURE]: (state, { payload: error }) => ({
       ...state,
-      authError: null,
-      auth,
+      authError: error,
     }),
     // 로그인 성공
     [LOGIN_SUCCESS]: (state, { payload: auth }) => ({
@@ -109,10 +108,9 @@ const auth = handleActions(
       auth,
     }),
     // 로그인 실패
-    [LOGIN_FAILURE]: (state, { payload: auth }) => ({
+    [LOGIN_FAILURE]: (state, { payload: error }) => ({
       ...state,
-      authError: null,
-      auth,
+      authError: error,
     }),
   },
   initialState,
