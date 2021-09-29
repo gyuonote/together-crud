@@ -13,7 +13,7 @@ const LoginForm = ({ history }) => {
   const [error, setError] = useState(null);
   //생성한 action 을 useDispatch를 통해 발생시킵니다. /gyuo/2021-09-22
   const dispatch = useDispatch();
-  // connect함수를 이용하지 않고리덕스의 state를 조회할 수 있습니다. /gyuo/2021-09-22
+  // connect함수를 이용하지 않고 리덕스의 state를 조회할 수 있습니다. /gyuo/2021-09-22
   const { form, auth, authError, user } = useSelector(({ auth, user }) => ({
     form: auth.login,
     auth: auth.auth,
