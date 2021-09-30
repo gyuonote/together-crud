@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../common/Button';
 
-const WriteActionButtonBlock = styled.div`
+const WriteActionButtonsBlock = styled.div`
   margin-top: 1rem;
   margin-bottom: 3rem;
   button + button {
@@ -20,12 +20,12 @@ const StyledButton = styled(Button)`
 
 const WriteActionButtons = ({ onCancel, onPublish }) => {
   return (
-    <WriteActionButtonBlock>
+    <WriteActionButtonsBlock>
       <StyledButton cyan onClick={onPublish}>
         포스트 등록
       </StyledButton>
       <StyledButton onClick={onCancel}>취소 </StyledButton>
-    </WriteActionButtonBlock>
+    </WriteActionButtonsBlock>
   );
 };
 
