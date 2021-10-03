@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
 import Responsive from '../common/Responsive';
 import Button from '../common/Button';
 import palette from '../../lib/styles/palette';
 import SubInfo from '../common/SubInfo';
 import Tags from '../common/Tags';
+import { Link } from 'react-router-dom';
 
 const PostListBlock = styled(Responsive)`
-    margin- top: 3rem;
+  margin-top: 3rem;
 `;
 
 const WritePostButtonWrapper = styled.div`
@@ -63,7 +63,6 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
   if (error) {
     return <PostListBlock>에러가 발생했습니다.</PostListBlock>;
   }
-
   return (
     <PostListBlock>
       <WritePostButtonWrapper>

@@ -15,7 +15,7 @@ const HeaderBlock = styled.div`
  *  Responsive 컴포넌트의 속성에 스타일을 추가해서 새로운 컴포넌트 생성
  */
 
-const Warpper = styled(Responsive)`
+const Wrapper = styled(Responsive)`
   height: 4rem;
   display: flex;
   align-items: center;
@@ -47,7 +47,7 @@ const Header = ({ user, onLogout }) => {
   return (
     <>
       <HeaderBlock>
-        <Warpper>
+        <Wrapper>
           <Link to="/" className="logo">
             REACTERS
           </Link>
@@ -61,7 +61,7 @@ const Header = ({ user, onLogout }) => {
               <Button to="/login">로그인</Button>
             </div>
           )}
-        </Warpper>
+        </Wrapper>
       </HeaderBlock>
       <Spacer />
     </>
