@@ -3,6 +3,8 @@ import styled from 'styled-components';
 import palette from '../../lib/styles/palette';
 import Responsive from '../common/Responsive';
 import SubInfo from '../common/SubInfo';
+import Tags from '../common/Tags';
+import { Helmet } from 'react-helmet-async';
 
 const PostViewerBlock = styled(Responsive)`
   margin-top: 4rem;
@@ -19,18 +21,6 @@ const PostHead = styled.div`
   }
 `;
 
-const Tags = styled.div`
-  margin-top: 0.5rem;
-  .tag {
-    display: inline-block;
-    color: ${palette.cyan[7]};
-    text-decoration: none;
-    margin-right: 0.5rem;
-    $:hover {
-      color: ${palette.cyan[6]};
-    }
-  }
-`;
 const PostContent = styled.div`
   font-size: 1.3125rem;
   color: ${palette.gray[8]};
@@ -52,6 +42,9 @@ const PostViewer = ({ post, error, loading, actionButtons }) => {
   const { title, body, user, publishedDate, tags } = post;
   return (
     <PostViewerBlock>
+      <Helmet>
+        <title>{title} - REACTERS</title>
+      </Helmet>
       <PostHead>
         <h1>{title}</h1>
         <SubInfo
