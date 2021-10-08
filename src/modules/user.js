@@ -1,6 +1,5 @@
 import { createAction, handleActions } from 'redux-actions';
-import { takeLatest } from 'redux-saga/effects';
-import { callExpression } from '../../../../../../../../Users/gosim/AppData/Local/Microsoft/TypeScript/4.4/node_modules/@babel/types/lib/index';
+import { takeLatest, call } from 'redux-saga/effects';
 import * as authAPI from '../lib/api/auth';
 import createRequestSaga, {
   createRequestActionTypes,
@@ -31,7 +30,7 @@ function checkFailureSaga() {
 
 function* logoutSaga() {
   try {
-    yield callExpression(authAPI.logout); // logout API 호출
+    yield call(authAPI.logout); // logout API 호출
     localStorage.removeItem('user'); // localStorage에서 user를 제거
   } catch (e) {
     console.log(e);

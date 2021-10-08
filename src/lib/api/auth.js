@@ -12,4 +12,4 @@ export const register = ({ username, password }) =>
 export const check = () => client.get('/api/auth/check');
 
 // 로그아웃
-export const logout = () => client.get('/api/auth/logout');
+export const logout = () => client.post('/api/auth/logout');
