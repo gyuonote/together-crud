@@ -13,8 +13,22 @@ const PostListBlock = styled(Responsive)`
 
 const WritePostButtonWrapper = styled.div`
   display: flex;
-  justify-content: flex-end;
   margin-bottom: 3rem;
+  float: right;
+`;
+
+const PostSearchButtonWrapper = styled.div`
+  display: inline-block;
+  margin-bottom: 3rem;
+  border: 1px solid black;
+  border-radius: 5px;
+  input {
+    font-size: 1.3rem;
+    border: none;
+  }
+  img {
+    width: 36%;
+  }
 `;
 
 const PostItemBlock = styled.div`
@@ -65,6 +79,12 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
   }
   return (
     <PostListBlock>
+      <PostSearchButtonWrapper>
+        <input placeholder="검색창입니다." type="search" />
+        <Button type="submit">
+          <img src="/images/search.png" alt="search" />
+        </Button>
+      </PostSearchButtonWrapper>
       <WritePostButtonWrapper>
         {showWriteButton && (
           <Button cyan to="/write">
