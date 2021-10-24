@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Button from './Button';
 import Responsive from './Responsive';
+import palette from '../../lib/styles/palette';
 
 const HeaderBlock = styled.div`
   position: fixed;
   width: 100%;
-  background: white;
+  background: ${palette.cyan[3]};
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
 `;
 
@@ -16,7 +17,7 @@ const HeaderBlock = styled.div`
  */
 
 const Wrapper = styled(Responsive)`
-  height: 4rem;
+  height: 6rem;
   display: flex;
   align-items: center;
   justify-content: space-between; /* 자식 엘리머트 사이의 여백을 최대로 설정 */
@@ -35,7 +36,7 @@ const Wrapper = styled(Responsive)`
  *  헤더가 fixed로 되어 있기 떄문에 페이지의 콘텐츠가 4rem 아래에 나타나도록 해 주는 컴포넌트
  */
 const Spacer = styled.div`
-  height: 4rem;
+  height: 6rem;
 `;
 
 const UserInfo = styled.div`
@@ -49,7 +50,7 @@ const Header = ({ user, onLogout }) => {
       <HeaderBlock>
         <Wrapper>
           <Link to="/" className="logo">
-            REACTERS
+            TOGETHER
           </Link>
           {user ? (
             <div className="right">

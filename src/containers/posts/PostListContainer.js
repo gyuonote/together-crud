@@ -16,6 +16,8 @@ const PostListContainer = ({ location, match }) => {
     }),
   );
 
+  const columns = ['제목', '아이디', '작성일자', '태그', '내용'];
+
   useEffect(() => {
     const { username } = match.params;
     const { tag, page } = qs.parse(location.search, {
@@ -30,6 +32,7 @@ const PostListContainer = ({ location, match }) => {
       error={error}
       posts={posts}
       showWriteButton={user}
+      columns={columns}
     />
   );
 };
