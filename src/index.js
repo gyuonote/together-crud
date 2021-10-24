@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { applyMiddleware, createStore } from 'redux';
@@ -11,6 +10,7 @@ import rootReducer from './modules';
 import { rootSaga } from './modules/index';
 import { tempSetUser, check } from './modules/user';
 import { HelmetProvider } from 'react-helmet-async';
+import App from './app';
 
 const sagaMiddleware = createSagaMiddleware();
 const store = createStore(

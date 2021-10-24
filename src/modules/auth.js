@@ -23,7 +23,7 @@ const LOGIN_SUCCESS = 'auth/LOGIN_SUCCESS';
 const LOGIN_FAILURE = 'auth/LOGIN_FAILURE'; 
 */
 
-// 위 코드를 리팩토링 /gyuo/2021-09-24
+// 위 주석 코드를 리팩토링 /gyuo/2021-09-24
 const [REGISTER, REGISTER_SUCCESS, REGISTER_FAILURE] =
   createRequestActionTypes('auth/REGISTER');
 
