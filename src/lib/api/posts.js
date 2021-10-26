@@ -22,4 +22,13 @@ export const updatePost = ({ id, title, body, tags }) =>
     tags,
   });
 
+export const searchPosts = ({ page, option, content }) => {
+  const queryString = qs.stringify({
+    page,
+    option,
+    content,
+  });
+  return client.get(`/aip/posts/search?{queryString}`);
+};
+
 export const removePost = (id) => client.delete(`/api/posts/${id}`);
