@@ -28,7 +28,7 @@ export const searchPosts = ({ page, option, content }) => {
     option,
     content,
   });
-  return client.get(`/aip/posts/search?{queryString}`);
+  return client.get(`/aip/posts/search?${queryString}`);
 };
 
 export const removePost = (id) => client.delete(`/api/posts/${id}`);
