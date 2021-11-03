@@ -41,6 +41,17 @@ const PostItemBlock = styled.div`
   }
 `;
 
+const PostSearch = styled.input`
+  background: ${palette.cyan[3]};
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.25rem 1rem;
+
+  cursor: pointer;
+`;
+
 const PostItem = ({ post }) => {
   const { publishedDate, user, tags, title, body, _id } = post;
   return (
@@ -66,6 +77,7 @@ const PostList = ({ posts, loading, error, showWriteButton }) => {
   return (
     <PostListBlock>
       <WritePostButtonWrapper>
+        <PostSearch type={'test'} placeholder={'검색창입니다'} />
         {showWriteButton && (
           <Button cyan to="/write">
             새 글 작성하기
